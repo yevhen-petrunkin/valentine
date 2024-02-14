@@ -1,0 +1,257 @@
+body {
+  min-height: 100vh;
+  background-color: #f2f1f3;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 600px;
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.frame {
+  position: relative;
+  z-index: 5;
+  aspect-ratio: 1/1;
+}
+
+.photo {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 80%;
+  width: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.btn_set {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 48%;
+  height: 30vw;
+  max-height: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8em;
+  color: white;
+  background-color: brown;
+
+  border-color: white;
+  border-radius: 8px;
+
+  transition: background-color 300ms ease-out;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ab4444;
+}
+
+.btn--agree {
+  background-color: green;
+}
+
+.btn--agree:hover,
+.btn--agree:focus {
+  background-color: #0f9f0f;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: #ab4444;
+}
+
+.heart:nth-child(1) {
+  left: 41%;
+  bottom: 0;
+  -webkit-animation: love 5s ease-in infinite;
+  animation: love 5s ease-in infinite;
+}
+
+.heart:nth-child(2) {
+  left: 93%;
+  bottom: 0;
+  -webkit-animation: love 10s ease-in infinite;
+  animation: love 10s ease-in infinite;
+}
+
+.heart:nth-child(3) {
+  left: 42%;
+  bottom: 0;
+  -webkit-animation: love 15s ease-in infinite;
+  animation: love 15s ease-in infinite;
+}
+
+.heart:nth-child(4) {
+  left: 6%;
+  bottom: 0;
+  -webkit-animation: love 20s ease-in infinite;
+  animation: love 20s ease-in infinite;
+}
+
+.heart:nth-child(5) {
+  left: 20%;
+  bottom: 0;
+  -webkit-animation: love 25s ease-in infinite;
+  animation: love 25s ease-in infinite;
+}
+
+.heart:nth-child(6) {
+  left: 29%;
+  bottom: 0;
+  -webkit-animation: love 30s ease-in infinite;
+  animation: love 30s ease-in infinite;
+}
+
+.heart:nth-child(7) {
+  left: 16%;
+  bottom: 0;
+  -webkit-animation: love 35s ease-in infinite;
+  animation: love 35s ease-in infinite;
+}
+
+.heart:nth-child(8) {
+  left: 7%;
+  bottom: 0;
+  -webkit-animation: love 40s ease-in infinite;
+  animation: love 40s ease-in infinite;
+}
+
+.heart:nth-child(9) {
+  left: 89%;
+  bottom: 0;
+  -webkit-animation: love 45s ease-in infinite;
+  animation: love 45s ease-in infinite;
+}
+
+.heart:nth-child(10) {
+  left: 42%;
+  bottom: 0;
+  -webkit-animation: love 50s ease-in infinite;
+  animation: love 50s ease-in infinite;
+}
+
+.heart:nth-child(11) {
+  left: 40%;
+  bottom: 0;
+  -webkit-animation: love 55s ease-in infinite;
+  animation: love 55s ease-in infinite;
+}
+
+.heart:nth-child(12) {
+  left: 33%;
+  bottom: 0;
+  -webkit-animation: love 60s ease-in infinite;
+  animation: love 60s ease-in infinite;
+}
+
+.heart:nth-child(13) {
+  left: 36%;
+  bottom: 0;
+  -webkit-animation: love 65s ease-in infinite;
+  animation: love 65s ease-in infinite;
+}
+
+.heart:nth-child(14) {
+  left: 15%;
+  bottom: 0;
+  -webkit-animation: love 70s ease-in infinite;
+  animation: love 70s ease-in infinite;
+}
+
+.heart:nth-child(15) {
+  left: 82%;
+  bottom: 0;
+  -webkit-animation: love 75s ease-in infinite;
+  animation: love 75s ease-in infinite;
+}
+
+.heart:nth-child(16) {
+  left: 27%;
+  bottom: 0;
+  -webkit-animation: love 80s ease-in infinite;
+  animation: love 80s ease-in infinite;
+}
+
+.heart:nth-child(17) {
+  left: 25%;
+  bottom: 0;
+  -webkit-animation: love 85s ease-in infinite;
+  animation: love 85s ease-in infinite;
+}
+
+.heart:nth-child(18) {
+  left: 74%;
+  bottom: 0;
+  -webkit-animation: love 90s ease-in infinite;
+  animation: love 90s ease-in infinite;
+}
+
+.heart:nth-child(19) {
+  left: 11%;
+  bottom: 0;
+  -webkit-animation: love 95s ease-in infinite;
+  animation: love 95s ease-in infinite;
+}
+
+.heart:nth-child(20) {
+  left: 86%;
+  bottom: 0;
+  -webkit-animation: love 100s ease-in infinite;
+  animation: love 100s ease-in infinite;
+}
+
+@-webkit-keyframes love {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+@keyframes love {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
