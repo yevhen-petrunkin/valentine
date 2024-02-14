@@ -1,5 +1,8 @@
 "use client";
 
+import { Sofia } from "next/font/google";
+const sofia = Sofia({ subsets: ["latin"], weight: "400" });
+
 import { useRef, useState, useEffect } from "react";
 
 const Button = ({ agree, onClick }) => {
@@ -35,14 +38,18 @@ const Button = ({ agree, onClick }) => {
   return (
     <>
       {agree ? (
-        <button className="btn btn--agree" type="button" onClick={onClick}>
+        <button
+          className={`btn btn--agree ${sofia.className}`}
+          type="button"
+          onClick={onClick}
+        >
           Yes
         </button>
       ) : (
         noStyles.fontSize > 0.6 && (
           <button
             ref={rejectBtn}
-            className="btn"
+            className={`btn ${sofia.className}`}
             type="button"
             onClick={reduceNo}
           >
